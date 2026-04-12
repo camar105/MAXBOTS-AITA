@@ -1,4 +1,4 @@
-# 📘 Lecture Summary
+#Lecture Summary
 
 ## 1. Topic Overview
 - **Course / Lecture Title:**
