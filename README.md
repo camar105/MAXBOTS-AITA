@@ -1,3 +1,5 @@
+Report: https://docs.google.com/document/d/1N05pGLe9K3O4Grm0YjHb96laR-BohjM3JuOpYaG0Mvc/edit?tab=t.0#heading=h.gjdgxs
+
 # Study Tool Summarizer
 
 This is a Python sample project you can include in your GitHub report. It lets a user upload:
