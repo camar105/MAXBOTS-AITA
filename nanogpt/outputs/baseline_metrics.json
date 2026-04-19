@@ -1,0 +1,45 @@
+{
+  "config_name": "baseline",
+  "device": "cpu",
+  "params": 112193,
+  "elapsed_seconds": 7.13,
+  "best_train_loss": 2.2661,
+  "best_val_loss": 2.277,
+  "final_train_loss": 2.2661,
+  "final_val_loss": 2.277,
+  "history": [
+    {
+      "iteration": 0,
+      "train_loss": 4.1601,
+      "val_loss": 4.1604
+    },
+    {
+      "iteration": 50,
+      "train_loss": 2.593,
+      "val_loss": 2.588
+    },
+    {
+      "iteration": 100,
+      "train_loss": 2.4977,
+      "val_loss": 2.512
+    },
+    {
+      "iteration": 150,
+      "train_loss": 2.4393,
+      "val_loss": 2.4597
+    },
+    {
+      "iteration": 200,
+      "train_loss": 2.3239,
+      "val_loss": 2.3509
+    },
+    {
+      "iteration": 250,
+      "train_loss": 2.2661,
+      "val_loss": 2.277
+    }
+  ],
+  "curve_path": "outputs\\baseline_curve.png",
+  "sample_path": "outputs\\baseline_sample.txt",
+  "checkpoint_path": "outputs\\baseline_checkpoint.pt"
+}

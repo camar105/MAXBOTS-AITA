@@ -1,0 +1,45 @@
+{
+  "config_name": "wider",
+  "device": "cpu",
+  "params": 241985,
+  "elapsed_seconds": 12.11,
+  "best_train_loss": 2.211,
+  "best_val_loss": 2.2269,
+  "final_train_loss": 2.211,
+  "final_val_loss": 2.2269,
+  "history": [
+    {
+      "iteration": 0,
+      "train_loss": 4.2037,
+      "val_loss": 4.2022
+    },
+    {
+      "iteration": 50,
+      "train_loss": 2.5477,
+      "val_loss": 2.5564
+    },
+    {
+      "iteration": 100,
+      "train_loss": 2.4566,
+      "val_loss": 2.4725
+    },
+    {
+      "iteration": 150,
+      "train_loss": 2.3864,
+      "val_loss": 2.405
+    },
+    {
+      "iteration": 200,
+      "train_loss": 2.2968,
+      "val_loss": 2.3129
+    },
+    {
+      "iteration": 250,
+      "train_loss": 2.211,
+      "val_loss": 2.2269
+    }
+  ],
+  "curve_path": "outputs\\wider_curve.png",
+  "sample_path": "outputs\\wider_sample.txt",
+  "checkpoint_path": "outputs\\wider_checkpoint.pt"
+}

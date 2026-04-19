@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "seed": 1337,
+    "batch_size": 32,
+    "block_size": 64,
+    "max_iters": 250,
+    "eval_interval": 50,
+    "eval_iters": 20,
+    "learning_rate": 0.003,
+    "dropout": 0.1,
+    "n_embed": 64,
+    "n_head": 2,
+    "n_layer": 2,
+    "max_new_tokens": 300
+  },
+  "wider": {
+    "seed": 1337,
+    "batch_size": 32,
+    "block_size": 64,
+    "max_iters": 250,
+    "eval_interval": 50,
+    "eval_iters": 20,
+    "learning_rate": 0.003,
+    "dropout": 0.1,
+    "n_embed": 96,
+    "n_head": 4,
+    "n_layer": 2,
+    "max_new_tokens": 300
+  },
+  "deeper_context": {
+    "seed": 1337,
+    "batch_size": 24,
+    "block_size": 96,
+    "max_iters": 250,
+    "eval_interval": 50,
+    "eval_iters": 20,
+    "learning_rate": 0.003,
+    "dropout": 0.1,
+    "n_embed": 96,
+    "n_head": 4,
+    "n_layer": 3,
+    "max_new_tokens": 300
+  }
+}

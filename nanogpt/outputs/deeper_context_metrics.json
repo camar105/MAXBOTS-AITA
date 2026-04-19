@@ -1,0 +1,45 @@
+{
+  "config_name": "deeper_context",
+  "device": "cpu",
+  "params": 356609,
+  "elapsed_seconds": 22.17,
+  "best_train_loss": 2.3196,
+  "best_val_loss": 2.3273,
+  "final_train_loss": 2.3196,
+  "final_val_loss": 2.3273,
+  "history": [
+    {
+      "iteration": 0,
+      "train_loss": 4.1977,
+      "val_loss": 4.1992
+    },
+    {
+      "iteration": 50,
+      "train_loss": 2.6017,
+      "val_loss": 2.6224
+    },
+    {
+      "iteration": 100,
+      "train_loss": 2.5032,
+      "val_loss": 2.5028
+    },
+    {
+      "iteration": 150,
+      "train_loss": 2.4599,
+      "val_loss": 2.4516
+    },
+    {
+      "iteration": 200,
+      "train_loss": 2.377,
+      "val_loss": 2.3908
+    },
+    {
+      "iteration": 250,
+      "train_loss": 2.3196,
+      "val_loss": 2.3273
+    }
+  ],
+  "curve_path": "outputs\\deeper_context_curve.png",
+  "sample_path": "outputs\\deeper_context_sample.txt",
+  "checkpoint_path": "outputs\\deeper_context_checkpoint.pt"
+}

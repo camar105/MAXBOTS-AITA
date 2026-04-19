@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StatAI-TA MVP</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero card">
+      <p class="eyebrow">Max's Bots</p>
+      <h1>StatAI-TA</h1>
+      <p class="lead">Upload statistics course material, stay grounded in your notes, and study with three focused commands: <code>summary</code>, <code>explain</code>, and <code>daily quiz</code>.</p>
+      <div class="status-row">
+        <span class="badge">Mock-first demo</span>
+        <span class="badge" id="session-badge">No session yet</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>1. Upload Materials</h2>
+        <form id="upload-form">
+          <label class="upload-box" for="sources">
+            <span>Select one or more statistics PDFs, markdown files, or text files.</span>
+            <input id="sources" name="sources" type="file" multiple accept=".pdf,.txt,.md,.csv,.log">
+          </label>
+          <button type="submit">Build Study Session</button>
+        </form>
+        <div id="upload-feedback" class="feedback"></div>
+        <ul id="file-list" class="plain-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>2. Choose A Command</h2>
+        <form id="command-form">
+          <label for="command">Command</label>
+          <select id="command" name="command">
+            <option value="summary">summary</option>
+            <option value="explain">explain</option>
+            <option value="daily quiz">daily quiz</option>
+          </select>
+
+          <label for="topic">Topic or prompt focus</label>
+          <input id="topic" name="topic" type="text" placeholder="Example: central limit theorem">
+
+          <button type="submit">Run Command</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="grid lower-grid">
+      <section class="card tall-card">
+        <div class="section-header">
+          <h2>Grounded Response</h2>
+          <span id="response-title" class="muted">Waiting for a command</span>
+        </div>
+        <div id="response-body" class="rendered-markdown empty-state">Upload course material to begin.</div>
+        <div id="quiz-panel" class="quiz-panel hidden">
+          <h3>Answer Key</h3>
+          <ol id="answer-key"></ol>
+          <form id="score-form" class="score-form">
+            <label for="quiz-score">How many did you get correct?</label>
+            <input id="quiz-score" type="number" min="0" max="10" value="0">
+            <button type="submit">Save Quiz Score</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="stack">
+        <section class="card">
+          <h2>Sources Used</h2>
+          <ul id="sources-list" class="source-list"></ul>
+        </section>
+
+        <section class="card">
+          <h2>Study Progress</h2>
+          <div id="progress-summary" class="feedback">No quiz attempts recorded yet.</div>
+          <ul id="progress-list" class="plain-list"></ul>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
