@@ -38,5 +38,4 @@ Then open `http://localhost:3000`.
 
 ## Notes
 
-- `project_template/` in the workspace is unrelated and intentionally ignored.
-- The `nanogpt/` deliverable is being rebuilt as a separate phase-complete submission.
+- The `nanogpt/` folder contains the completed Phase 2 implementation, experiment outputs, and report.
