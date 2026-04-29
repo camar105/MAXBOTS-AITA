@@ -226,15 +226,3 @@ button:hover {
     align-items: flex-start;
   }
 }
-
-select,
-select option {
-  background-color: #111827;
-  color: #f9fafb;
-}
-
-select option:hover,
-select option:checked {
-  background-color: #2563eb;
-  color: #ffffff;
-}
