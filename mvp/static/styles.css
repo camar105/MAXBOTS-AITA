@@ -237,3 +237,11 @@ select option:checked {
   background-color: #8ed3ff;
   color: #072030;
 }
+
+/* Background image */
+body {
+  background:
+    linear-gradient(rgba(12, 18, 34, 0.45), rgba(12, 18, 34, 0.45)),
+    url("/static/back.png") center center / cover fixed no-repeat,
+    var(--bg);
+}
